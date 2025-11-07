@@ -1,8 +1,8 @@
-# ÎŞÈË»ú»ã×Ü
+# æ— äººæœºæ±‡æ€»
 
-## ±¨´íÓë½â¾ö
+## æŠ¥é”™ä¸è§£å†³
 
-#### ±¨´í1£º
+#### æŠ¥é”™1ï¼š
 > Installing PX4 Python3 dependencies
 Collecting argcomplete
   Using cached argcomplete-3.6.3-py3-none-any.whl (43 kB)
@@ -13,37 +13,37 @@ Collecting cerberus
 ERROR: Could not find a version that satisfies the requirement coverage (from -r /home/zq/sunray_px4/Tools/setup/requirements.txt (line 4)) (from versions: none)
 ERROR: No matching distribution found for coverage (from -r /home/zq/sunray_px4/Tools/setup/requirements.txt (line 4))
 
-ÏÔÊ¾ÈçÉÏÎÊÌâ¡£
-#### ½â¾ö1£º
-ÕâÊÇ PX4 µÄ Python ÒÀÀµ°²×°ÎÊÌâ£¬Ö÷ÒªÊÇ coverage °üÕÒ²»µ½¡£ÈÃÎÒÃÇ½â¾öÕâ¸öÎÊÌâ£º
+æ˜¾ç¤ºå¦‚ä¸Šé—®é¢˜ã€‚
+#### è§£å†³1ï¼š
+è¿™æ˜¯ PX4 çš„ Python ä¾èµ–å®‰è£…é—®é¢˜ï¼Œä¸»è¦æ˜¯ coverage åŒ…æ‰¾ä¸åˆ°ã€‚è®©æˆ‘ä»¬è§£å†³è¿™ä¸ªé—®é¢˜ï¼š
 ```
-# Éı¼¶ pip
+# å‡çº§ pip
 pip3 install --upgrade pip
 
-# ¸ü»»ÎªÇå»ªÔ´
+# æ›´æ¢ä¸ºæ¸…åæº
 pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-#### ±¨´í2£º
+#### æŠ¥é”™2ï¼š
 >Installing PX4 Python3 dependencies
 ERROR: Invalid requirement: 'matplotlib>=3.0.*': .* suffix can only be used with `==` or `!=` operators
     matplotlib>=3.0.*
               ~~~~~~^ (from line 11 of /home/zq/sunray_px4/Tools/setup/requirements.txt)
-#### ½â¾ö2£º
-Õâ¸ö´íÎóÊÇÒòÎª requirements.txt ÖĞµÄ°æ±¾Óï·¨²»ÕıÈ·¡£matplotlib>=3.0.* ÕâÖÖĞ´·¨ÔÚ½ÏĞÂ°æ±¾µÄ pip ÖĞ²»±»Ö§³Ö¡£ÈÃÎÒÃÇĞŞ¸´Õâ¸öÎÊÌâ£º
+#### è§£å†³2ï¼š
+è¿™ä¸ªé”™è¯¯æ˜¯å› ä¸º requirements.txt ä¸­çš„ç‰ˆæœ¬è¯­æ³•ä¸æ­£ç¡®ã€‚matplotlib>=3.0.* è¿™ç§å†™æ³•åœ¨è¾ƒæ–°ç‰ˆæœ¬çš„ pip ä¸­ä¸è¢«æ”¯æŒã€‚è®©æˆ‘ä»¬ä¿®å¤è¿™ä¸ªé—®é¢˜ï¼š
 ```
-# ĞŞ¸´°æ±¾Óï·¨
+# ä¿®å¤ç‰ˆæœ¬è¯­æ³•
 sed -i 's/matplotlib>=3.0\.\*/matplotlib>=3.0/g' /home/zq/sunray_px4/Tools/setup/requirements.txt
 
-ÖØĞÂ°²×°ÒÀÀµ
+é‡æ–°å®‰è£…ä¾èµ–
 cd /home/zq/sunray_px4
 
-# Ê¹ÓÃ¹úÄÚ¾µÏñÔ´°²×°
+# ä½¿ç”¨å›½å†…é•œåƒæºå®‰è£…
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r Tools/setup/requirements.txt
 ```
 
-#### ±¨´í3£º
-³öÏÖÈçÏÂ´íÎó
+#### æŠ¥é”™3ï¼š
+å‡ºç°å¦‚ä¸‹é”™è¯¯
 > Could not find a package configuration file provided by "octomap_msgs" with
   any of the following names:
     octomap_msgsConfig.cmake
@@ -52,18 +52,83 @@ make: *** No targets specified and no makefile found.  Stop.
 make: *** No targets specified and no makefile found.  Stop.
 ================================
 [DEBUG] make exit code: 2
-catkin¹¹½¨Ê§°Ü: sunray_ugv_control (make failed with exit code: 2)
-[´íÎó] Ä£¿é¹¹½¨Ê§°Ü: sunray_ugv_control
-[Ê§°Ü] 18/21: sunray_ugv_control
+catkinæ„å»ºå¤±è´¥: sunray_ugv_control (make failed with exit code: 2)
+[é”™è¯¯] æ¨¡å—æ„å»ºå¤±è´¥: sunray_ugv_control
+[å¤±è´¥] 18/21: sunray_ugv_control
 
-#### ½â¾ö3£º
+#### è§£å†³3ï¼š
 ```
 sudo apt-get install -y \
 ros-noetic-octomap-msgs \
 ros-noetic-octomap-ros \
 ros-noetic-octomap-server \
 ros-noetic-octomap-rviz-plugins
-
 ```
 
-#### ±¨´í4£º
+#### æŠ¥é”™4ï¼š
+![å‡ºç°å¦‚ä¸‹æŠ¥é”™](/images/4.jpg)
+#### è§£å†³4ï¼š
+ä»¿çœŸä¸éœ€è¦ï¼Œç¡¬ä»¶éœ€è¦
+
+**ç¡¬ä»¶ç¯å¢ƒä¸‹ï¼š**
+
+æ–¹æ¡ˆ1ï¼šå®‰è£… RKNN Toolkitï¼ˆå¦‚æœä½ æœ‰ Rockchip è®¾å¤‡ï¼‰
+```
+# åˆ›å»ºç¬¬ä¸‰æ–¹åº“ç›®å½•
+mkdir -p ~/libs
+cd ~/libs
+
+# ä¸‹è½½ RKNN Toolkitï¼ˆéœ€è¦ä»å®˜æ–¹è·å–ï¼‰
+# ç”±äºç‰ˆæƒåŸå› ï¼Œéœ€è¦ä» Rockchip å®˜ç½‘ä¸‹è½½
+# æˆ–è€…ä½¿ç”¨ wget ä¸‹è½½ï¼ˆå¦‚æœçŸ¥é“ä¸‹è½½é“¾æ¥ï¼‰
+# wget https://github.com/rockchip-linux/rknn-toolkit2/archive/refs/tags/v1.5.2.tar.gz
+
+# è§£å‹å¹¶å®‰è£…
+tar -xzf rknn-toolkit2-*.tar.gz
+cd rknn-toolkit2-*
+
+# å®‰è£… Python åŒ…
+pip3 install -r requirements.txt
+pip3 install .
+
+# è®¾ç½®å¤´æ–‡ä»¶è·¯å¾„
+export RKNN_API_PATH=~/libs/rknn-toolkit2-*/runtime/RKNN-RT2/rknn-api/include
+```
+**ä»¿çœŸç¯å¢ƒä¸‹ï¼š**
+
+æ–¹æ¡ˆ2ï¼šä¸´æ—¶æ³¨é‡Šæ‰ NPU ç›¸å…³ä»£ç 
+```
+cd /home/zq/Sunray/External_Module/sunray_detection
+
+# å¤‡ä»½æ–‡ä»¶
+cp detection_libs/src/inference_backend/npu/rknn/rknn_runner.h detection_libs/src/inference_backend/npu/rknn/rknn_runner.h.bak
+
+# åœ¨æ–‡ä»¶å¼€å¤´æ·»åŠ ç¦ç”¨å®
+echo -e "#ifndef DISABLE_NPU\n#define DISABLE_NPU\n#endif\n\n$(cat detection_libs/src/inference_backend/npu/rknn/rknn_runner.h)" > detection_libs/src/inference_backend/npu/rknn/rknn_runner.h
+```
+
+#### æŠ¥é”™5ï¼š
+![å‡ºç°å¦‚ä¸‹æŠ¥é”™](/images/5.jpg)
+#### è§£å†³5ï¼š
+```
+sudo apt-get install -y \
+    libsfml-dev \
+    libsfml-system2.5 \
+    libsfml-window2.5 \
+    libsfml-graphics2.5 \
+    libsfml-audio2.5 \
+    libsfml-network2.5
+```
+
+#### æŠ¥é”™6ï¼š
+![å‡ºç°å¦‚ä¸‹æŠ¥é”™](/images/6.jpg)
+
+#### è§£å†³6ï¼š
+æ¸…ç†æ‰€æœ‰rosè¿›ç¨‹
+```
+pkill -f roscore
+pkill -f roslaunch
+pkill -f rosmaster
+sleep 2
+roscore
+```
