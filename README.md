@@ -149,15 +149,15 @@ roscore
 P.S如果遇到上电开机很久显示器还是没有显示，但是按钮风扇都有启动的情况，尝试以下操作：
 a.在上电开机的状态下按下重置按钮，此时电脑会断电关机
 
-![机载电脑开机](/images/机载电脑开机.png)
+![机载电脑开机](images/机载电脑开机.png)
 
 b.拔出电源重新上电，按下开机键，等待一会
 
-![重置](/images/重置.png)
+![重置](images/重置.png)
 
 c.电脑成功显示，如多次尝试还是不显示，请联系售后人员
 
-![电脑成功显示](/images/电脑成功显示.png)
+![电脑成功显示](images/电脑成功显示.png)
 
 ## 3.使用NoMachine远程桌面连接机载电脑
 ### 3.1
@@ -207,5 +207,6 @@ roslaunch sunray_uav_control external_fusion.launch external_source:=3
 ``` bash
 ./demo_hexayon.sh
   ```
+
 
 
